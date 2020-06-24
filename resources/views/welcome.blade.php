@@ -18,7 +18,7 @@
             @foreach($products as $product)
             <div class="col-lg-3">
                 <div class="card" style="margin-bottom: 20px; height: auto;">
-                    <img src="{{ asset($product->image) }}" class="card-img-top mx-auto" 
+                    <img src="{{ asset($product->photo) }}" class="card-img-top mx-auto" 
                     style="height: 150px; width: 150px;display: block;" alt="">
                     <div class="card-body">
                         <a href="">
@@ -30,7 +30,7 @@
                             <input type="hidden" value="{{ $product->id }}" id="id" name="id">
                             <input type="hidden" value="{{ $product->name }}" id="name" name="name">
                             <input type="hidden" value="{{ $product->price }}" id="price" name="price">
-                            <input type="hidden" value="{{ $product->image }}" id="image" name="image">
+                            <input type="hidden" value="{{ $product->photo }}" id="photo" name="photo">
                             <input type="hidden" value="1" id="quantity" name="quantity">
                             <div class="card-footer" style="background-color: white;">
                                 <div class="row">
